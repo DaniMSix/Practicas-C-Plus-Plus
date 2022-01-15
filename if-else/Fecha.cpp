@@ -14,6 +14,7 @@ int main(){
     cout<<"Introduzca la fecha"<<endl;
     scanf("%d %s %d",&dia,&mes, &anio);
 
+	
     if (mes == "enero"){
         cout<<dia<<"/"<<1<<"/"<<anio;
     }else if (mes =="febrero"){
