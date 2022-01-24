@@ -7,23 +7,21 @@ using namespace std;
 
 int main(){
 
-    int num;
+    int num, resultado = 1;
     //Pedimos el número
     cout<<"Inserte un número"<<endl;
     cin>>num;
 
-    // Esta variable es para que cuando sea igual al número introducido se salga del ciclo
-    int aux = 1;
-    
-    
+    // Esta variable es para que vaya multiplicando por los números anteriores
+    int factorial = num;
 
-    while (num>0){
+    while (factorial>1){
         
-        aux = num * aux;
-        num--;
+        resultado = resultado * factorial;
+        factorial--;
         
     }
 
-    cout<<"El factorial es: "<<aux;
+    cout<<"El factorial es: "<<resultado;
     
 }
